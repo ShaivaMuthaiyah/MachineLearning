@@ -1,0 +1,99 @@
+
+🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟❓ Question ❓🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟
+
+LAB
+
+Estimated time
+30-60 minutes
+
+Level of difficulty
+Easy
+
+Objectives
+Improving the student's skills in using the Calendar class.
+Scenario
+During this course, we looked at the Calendar class a bit. Your task is to extend its functionality with a new method called count_weekday_in_year, which takes a year and a weekday as parameters, and then returns the number of occurrences of a specific weekday in the year.
+
+Use the following tips:
+
+Create a class called MyCalendar that extends the Calendar class;
+create the count_weekday_in_year method with the year and weekday parameters. The weekday parameter should be a value between 0-6, where 0 is Monday and 6 is Sunday. The method should return the number of days as an integer;
+in your implementation, use the monthdays2calendar method of the Calendar class.
+The following are the expected results:
+
+Sample arguments
+
+year=2019, weekday=0
+
+Expected output
+
+52
+
+
+Sample arguments
+
+year=2000, weekday=6
+
+Expected output
+
+53
+
+
+🔥🔥🔥🔥🔥🔥🔥🔥🔥✅ Answer ✅🔥🔥🔥🔥🔥🔥🔥🔥🔥
+
+import calendar
+
+# custom class called MyCalendar
+class MyCalendar(calendar.Calendar):
+
+    # custom method inside the custom class
+    def count_weekday_in_year(self, year, weekday):
+        
+        # creat the calendar object using the default class Calendar
+        c = calendar.Calendar()
+        
+        # occurences to track the number of weekdays
+        occurences = 0
+        
+        # make sure input is between 0 and 6 otherwise tell the user
+        if weekday < 0 or weekday > 6:
+            print("The weekday parameter should be a value between 0-6")
+            return
+        
+        # months are between 1 and 12 so we use range of 1,13
+        for months in range(1,13):
+            
+            # the month2dayscalendar returns a list of weeks of input month
+            for weeks in c.monthdays2calendar(year, months):
+                
+                # each list of weeks contains tuple (month day number, weekday number)
+                for day in weeks:
+                    
+                    # day[0] makes sure the day of the week is in the month
+                    # day[1] is the weekday we are looking for
+                    
+                    if day[1] == weekday and day[0] != 0:
+                        
+                        # update the counter when match is found
+                        occurences += 1
+
+                    
+        return occurences
+            
+
+
+
+
+# initialize the custom class object
+c = MyCalendar()
+
+# Test Cases: 
+
+print(c.count_weekday_in_year(year=2019, weekday=0))
+print(c.count_weekday_in_year(year=2000, weekday=6))
+
+
+# Output:
+# 52
+# 53
+
