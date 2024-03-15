@@ -1,0 +1,123 @@
+🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟❓ Question ❓🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟
+
+LAB
+
+Estimated time
+30-90 minutes
+
+Level of difficulty
+Hard
+
+Pre-requisites
+Module 1.11.1.1, Module 1.11.1.2
+
+Objectives
+improving the student's skills in operating with strings;
+converting characters into ASCII code, and vice versa.
+Scenario
+You are already familiar with the Caesar cipher, and this is why we want you to improve the code we showed you recently.
+
+The original Caesar cipher shifts each character by one: a becomes b, z becomes a, and so on. Let's make it a bit harder, and allow the shifted value to come from the range 1..25 inclusive.
+
+Moreover, let the code preserve the letters' case (lower-case letters will remain lower-case) and all non-alphabetical characters should remain untouched.
+
+Your task is to write a program which:
+
+asks the user for one line of text to encrypt;
+asks the user for a shift value (an integer number from the range 1..25 - note: you should force the user to enter a valid shift value (don't give up and don't let bad data fool you!)
+prints out the encoded text.
+Test your code using the data we've provided.
+
+Test data
+Sample input:
+
+abcxyzABCxyz 123
+2
+
+Sample output:
+
+cdezabCDEzab 123
+
+Sample input:
+
+The die is cast
+25
+
+Sample output:
+
+Sgd chd hr bzrs
+
+🔥🔥🔥🔥🔥🔥🔥🔥🔥✅ Answer ✅🔥🔥🔥🔥🔥🔥🔥🔥🔥
+
+
+
+def caesarCipher(text, shift_value):
+    
+    # empty encoded string
+    encoded = ""
+    
+    # remove all whitespaces in the string
+    text = text.strip()
+    
+    # loop through each char in the input 
+    for char in text:
+        
+        # if the value is not an alphabet keep it as it is
+        if char.isalpha()== False:
+            encoded = encoded + char
+         
+        # if the value is an alphabet we use the shift value    
+        elif char.isalpha():
+            ordinal_val = ord(char)
+            shifted_val = ordinal_val + shift_value
+            char_shift = chr(shifted_val)
+            
+            
+            # since there are 26 alphabets we keep the range of values inside it
+            # keep lowercase alphabets lowercase
+            if char.islower():
+                if shifted_val > ord("z"):
+                    char_shift = chr(shifted_val - 26)
+                    
+            # keep uppercase alphabets uppercase     
+            else:
+                if shifted_val > ord("Z"):
+                    char_shift = chr(shifted_val - 26)
+                
+                
+            # update the encoded value with the shifted value
+            encoded = encoded + char_shift
+            
+    print(encoded)
+    
+    
+    
+    
+            
+text = input("Enter a line of text to encrypt using the cipher: ")
+
+shift_value = int(input("Enter a shift value in the range 1 to 25: "))
+
+# condition to make sure shift value in entered properly
+
+condition = (shift_value < 1) or (shift_value > 25)
+
+while condition:
+    
+    shift_value = int(input("Enter a shift value in the range 1 to 25"))    
+    
+    
+caesarCipher(text, shift_value)
+
+
+# Output:
+
+# Enter a line of text to encrypt using the cipher: abcxyzABCxyz 123
+# Enter a shift value in the range 1 to 25: 2
+# cdezabCDEzab 123
+
+# Enter a line of text to encrypt using the cipher: The die is cast
+# Enter a shift value in the range 1 to 25: 25
+# Sgd chd hr bzrs    
+
+
