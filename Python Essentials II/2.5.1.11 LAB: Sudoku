@@ -1,0 +1,138 @@
+🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟❓ Question ❓🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟
+
+LAB
+
+Estimated time
+60-90 minutes
+
+Level of difficulty
+Hard
+
+Objectives
+improving the student's skills in operating with strings and lists;
+converting strings into lists.
+Scenario
+As you probably know, Sudoku is a number-placing puzzle played on a 9x9 board. The player has to fill the board in a very specific way:
+
+each row of the board must contain all digits from 0 to 9 (the order doesn't matter)
+each column of the board must contain all digits from 0 to 9 (again, the order doesn't matter)
+each of the nine 3x3 "tiles" (we will name them "sub-squares") of the table must contain all digits from 0 to 9.
+If you need more details, you can find them here.
+
+Your task is to write a program which:
+
+reads 9 rows of the Sudoku, each containing 9 digits (check carefully if the data entered are valid)
+outputs Yes if the Sudoku is valid, and No otherwise.
+Test your code using the data we've provided.
+
+Test data
+Sample input:
+
+295743861
+431865927
+876192543
+387459216
+612387495
+549216738
+763524189
+928671354
+154938672
+Sample output:
+
+Yes
+
+
+Sample input:
+
+195743862
+431865927
+876192543
+387459216
+612387495
+549216738
+763524189
+928671354
+254938671
+Sample output:
+
+No
+
+🔥🔥🔥🔥🔥🔥🔥🔥🔥✅ Answer ✅🔥🔥🔥🔥🔥🔥🔥🔥🔥
+
+def sudoku(input_values):
+    
+    # Split into a list of rows
+    split_list = input_values.split("\n")
+    
+    # Length of each row and sum of elements will be same
+    sum_1_9 = sum(range(1, 10))
+    
+    # check each row
+    for row in split_list:
+        row_list = [int(x) for x in row]
+        
+        # check if the row has 9 elements and the sum of those elements
+        if len(row_list) != 9 or sum(row_list) != sum_1_9:
+            print("No")
+            return False
+    
+    # check each column
+    for i in range(9):
+        column_sum = 0
+        for j in range(9):
+            column_sum += int(split_list[j][i])
+        if column_sum != sum_1_9:
+            print("No")
+            return False
+
+
+    # check each 3x3 subgrid
+    for i in range(0, 9, 3): 
+        for j in range(0, 9, 3):
+            subgrid_numbers = set()
+            for k in range(3):  
+                for l in range(3): 
+                    cell_value = int(split_list[i + k][j + l])
+                    subgrid_numbers.add(cell_value)
+                    
+            # check if subgrid has all the numbers from 1 to 9
+            if subgrid_numbers != set(range(1, 10)): 
+                print("No")
+                return False
+                
+                
+    print("Yes")
+    return True
+
+
+input_values = '''295743861
+431865927
+876192543
+387459216
+612387495
+549216738
+763524189
+928671354
+154938672'''
+
+
+
+input_values2 = '''195743862
+431865927
+876192543
+387459216
+612387495
+549216738
+763524189
+928671354
+254938671'''
+
+                
+                
+sudoku(input_values)
+sudoku(input_values2)
+
+# Output:
+
+# Yes
+# No
