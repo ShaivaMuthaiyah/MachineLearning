@@ -1,0 +1,83 @@
+🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟❓ Question ❓🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟
+
+LAB
+
+Estimated time
+15-25 minutes
+
+Level of difficulty
+Medium
+
+Objectives
+improving the student's skills in defining functions;
+using exceptions in order to provide a safe input environment.
+Scenario
+Your task is to write a function able to input integer values and to check if they are within a specified range.
+
+The function should:
+
+accept three arguments: a prompt, a low acceptable limit, and a high acceptable limit;
+if the user enters a string that is not an integer value, the function should emit the message Error: wrong input, and ask the user to input the value again;
+if the user enters a number which falls outside the specified range, the function should emit the message Error: the value is not within permitted range (min..max) and ask the user to input the value again;
+if the input value is valid, return it as a result.
+Test data
+Test your code carefully.
+
+This is how the function should react to the user's input:
+
+Enter a number from -10 to 10: 100
+Error: the value is not within permitted range (-10..10)
+Enter a number from -10 to 10: asd
+Error: wrong input
+Enter number from -10 to 10: 1
+The number is: 1
+
+🔥🔥🔥🔥🔥🔥🔥🔥🔥✅ Answer ✅🔥🔥🔥🔥🔥🔥🔥🔥🔥
+
+def read_int(prompt, min, max):
+       
+    # flag is set to keep the loop running
+    valid = False
+    
+    # loop will keep asking as long as the flag is false
+    while valid == False:
+        
+        try:
+            
+            # ask the input from the user
+            value = input(prompt)
+            
+            # check if the input value is a digit
+            if value.isdigit() == False:
+                raise ValueError
+            
+            # if it is a digit check if it is in the range 
+            if  int(value) >= min and int(value) <= max:
+                valid = True
+            else:
+                raise Exception
+            
+        # exception raised for non numeric input   
+        except ValueError:
+            print("wrong input")
+        
+        # for all other issues we raise default exception
+        except:
+            print("The value is not within permitted range (-10..10)")
+     
+    return int(value)   
+    
+        
+v = read_int("Enter a number from -10 to 10: ", -10, 10)
+
+print("The number is:", v)
+
+
+# Output:
+    
+# Enter a number from -10 to 10: 100
+# The value is not within permitted range (-10..10)
+# Enter a number from -10 to 10: asd
+# wrong input
+# Enter a number from -10 to 10: 1
+# The number is: 1
