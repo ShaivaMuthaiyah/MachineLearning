@@ -1,0 +1,73 @@
+🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟❓ Question ❓🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟
+
+LAB
+
+Estimated time
+20-25 minutes
+
+Level of difficulty
+Medium
+
+Objectives
+improving the student's skills in operating with strings;
+using built-in Python string methods.
+Scenario
+You already know how split() works. Now we want you to prove it.
+
+Your task is to write your own function, which behaves almost exactly like the original split() method, i.e.:
+
+it should accept exactly one argument - a string;
+it should return a list of words created from the string, divided in the places where the string contains whitespaces;
+if the string is empty, the function should return an empty list;
+its name should be mysplit()
+Use the template in the editor. Test your code carefully.
+
+Expected output
+['To', 'be', 'or', 'not', 'to', 'be,', 'that', 'is', 'the', 'question']
+['To', 'be', 'or', 'not', 'to', 'be,that', 'is', 'the', 'question']
+[]
+['abc']
+[]
+
+🔥🔥🔥🔥🔥🔥🔥🔥🔥✅ Answer ✅🔥🔥🔥🔥🔥🔥🔥🔥🔥
+
+def mysplit(strng):
+    
+    string_list = []
+    
+    # this empty string will form each word and stop growing upon encountering a space
+    word = ""
+    
+    # return empty if list is empty
+    if len(strng)== 0:
+        return string_list
+        
+    for s in strng:
+        if s != " ":
+            
+            # concatenate the letters to form a word
+            word = word + s
+            
+        # the space is a delimited her so we split it at that point
+        # we also make sure no empty strings are present so word != ""
+        if s == " " and word != "" :
+            string_list.append(word)
+            word = ""
+            
+    return string_list
+        
+
+print(mysplit("To be or not to be, that is the question"))
+print(mysplit("To be or not to be,that is the question"))
+print(mysplit("   "))
+print(mysplit(" abc "))
+print(mysplit(""))
+
+
+# Output:
+    
+# ['To', 'be', 'or', 'not', 'to', 'be,', 'that', 'is', 'the']
+# ['To', 'be', 'or', 'not', 'to', 'be,that', 'is', 'the']
+# []
+# ['abc']
+# []
