@@ -1,0 +1,108 @@
+🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟❓ Question ❓🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟
+
+
+Estimated time
+15-30 minutes
+
+Level of difficulty
+Medium
+
+Prerequisites
+4.3.1.15
+
+Objectives
+improve the student's skills in operating with files (reading/writing)
+using lambdas to change the sort order.
+Scenario
+The previous code needs to be improved. It's okay, but it has to be better.
+
+Your task is to make some amendments, which generate the following results:
+
+the output histogram will be sorted based on the characters' frequency (the bigger counter should be presented first)
+the histogram should be sent to a file with the same name as the input one, but with the suffix '.hist' (it should be concatenated to the original name)
+Assuming that the input file contains just one line filled with:
+
+cBabAa
+samplefile.txt
+
+the expected output should look as follows:
+
+a -> 3
+b -> 2
+c -> 1
+output
+
+Tip: Use a lambda to change the sort order.
+
+🔥🔥🔥🔥🔥🔥🔥🔥🔥✅ Answer ✅🔥🔥🔥🔥🔥🔥🔥🔥🔥
+
+def characterFreqHist2(name):
+    
+    # extension for the file
+    file_name = name + ".txt"
+
+    # file will be automatically created
+    with open(file_name, "wt") as file:
+        
+        # file contains only one line
+        file.write("cBabAa")
+        
+    # open in read mode
+    with open(file_name, "rt") as file:
+        
+        # read the file prepared earlier
+        content = file.readline()
+        
+        # histogram to capture occurences
+        hist = {}
+        
+        # convert to lowercase as we treat them same
+        content = content.lower()
+        
+        # loop through each character
+        for char in content:
+            if char not in hist:
+                hist[char] = 1
+            else:
+                hist[char] += 1
+        
+    
+    file.close()    
+        
+    # sort dictionary based on the character frequency
+    # we use the lambda as the sorting key so the tuple will be sorted on the values
+    # at index 1
+    sorted_hist = dict(sorted(hist.items(), reverse=True, key = lambda x: x[1]))
+    
+    # need to write to a second file
+    
+    new_file_name = name + ".hist"
+      
+    with open(new_file_name, "wt") as file:
+   
+        # write to new file
+        for key, value in sorted_hist.items():
+            
+            # display only non zero values
+            if value != 0:
+                
+                # write content into new file
+                text = str(key) + " -> " + str(value)
+                file.write(text)
+                print(text)
+    
+    file.close()            
+                
+                
+#name = "samplefile"
+
+name = input("Please enter the name of the file: ")
+
+characterFreqHist2(name)
+
+# Output:
+
+# a -> 3
+# b -> 2
+# c -> 1
+    
