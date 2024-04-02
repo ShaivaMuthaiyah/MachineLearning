@@ -36,7 +36,14 @@ Climate change poses a significant threat to biodiversity, leading to shifts in 
 - Biodiversity data: Species richness, abundance, distribution maps, habitat characteristics.
 
 ## Analysis
-1. Motif Locations: On analysis of upsteam250.txt using MEME with a motif width of 20 we receive the following results
+### Motif Locations: 
+The dataset "upstream250.txt" underwent analysis with a minimum and maximum motif length set at 20, facilitating the visualization of motif occurrences within each sequence contained in the file. The graphical representation below illustrates the consensus motif derived from the analysis.
+
+![AGGGSCGWARGTCCYCAABB](AGGGSCGWARGTCCYCAABB.png "Consensus motif from upstream250 with motif of length 20")
+
+Motif occurrences were observed at multiple positions along the DNA sequences, with a predominant trend indicating their prevalence beyond the 114th position, predominantly favoring the right side of the DNA sequence. Selected instances of motif positions are visually depicted below for reference.
+
+![meme-motif-locations250](meme-motif-locations250.svg "Motif locations in upstream250")
 
 ## Conclusion
 This project aims to contribute to our understanding of the complex interactions between climate change and biodiversity. By analyzing historical data and projecting future scenarios, we hope to inform evidence-based decision-making and promote conservation efforts in the face of environmental change.
