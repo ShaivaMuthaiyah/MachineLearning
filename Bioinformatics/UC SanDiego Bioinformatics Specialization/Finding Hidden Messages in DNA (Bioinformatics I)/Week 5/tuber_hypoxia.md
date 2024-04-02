@@ -80,6 +80,17 @@ To elucidate the disparities between these strings, we can consult the table:
 **HAGGGVCRDAAGTCCYYARY**
 ![HAGGGVCRDAAGTCCYYARY](HAGGGVCRDAAGTCCYYARY.png "Consensus motif from upstream250 with motif of length 6/20")
 
+### Comparing motif logos from different upstream sections of the sequence
+
+**TMCGCCCMHKCVANGRRGAY**
+![TMCGCCCMHKCVANGRRGAY](TMCGCCCMHKCVANGRRGAY_25.png "Consensus motif from upstream25 with motif of length 20") 
+
+**CVRYTRGGGACYDWMGBCCC**
+![AGGGSCGWARGTCCYCAABB](CVRYTRGGGACYDWMGBCCC_100.png "Consensus motif from upstream100 with motif of length 20") 
+
+**CVRYTRGGGACYDWMGBCCC**
+![AGGGSCGWARGTCCYCAABB](CVRYTRGGGACYDWMGBCCC_100.png "Consensus motif from upstream100 with motif of length 20") 
+
 ## Conclusion
 There are several conclusions we can come to based on the study.
 
