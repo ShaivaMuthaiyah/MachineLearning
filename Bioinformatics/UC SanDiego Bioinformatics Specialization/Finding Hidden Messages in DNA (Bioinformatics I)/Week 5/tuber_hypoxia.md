@@ -93,6 +93,7 @@ The logos derived from various upstream regions are displayed below. It's eviden
 **CVRYTRGGGACYDWMGBCCC**: from 100 bp upstream region
 ![AGGGSCGWARGTCCYCAABB](CVRYTRGGGACYDWMGBCCC_100.png "Consensus motif from upstream100 with motif of length 20") 
 
+
 **GBTRGGGMCNRAMGTCCCCN**: from 1000 bp upstream region
 ![GBTRGGGMCNRAMGTCCCCN](GBTRGGGMCNRAMGTCCCCN_1000.png "Consensus motif from upstream1000 with motif of length 20") 
 
@@ -109,3 +110,4 @@ The study yields several key insights:
 - 8436_lores.jpg from https://www.cdc.gov/vaccines/vpd/tb/public/photos.html
 - Timothy L. Bailey and Charles Elkan, "Fitting a mixture model by expectation maximization to discover motifs in biopolymers", Proceedings of the Second International Conference on Intelligent Systems for Molecular Biology, pp. 28-36, AAAI Press, Menlo Park, California, 1994. [full text]
 
+<rect width="100%" height="100%" fill="white"/>
