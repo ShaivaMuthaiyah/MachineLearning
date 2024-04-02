@@ -1,5 +1,5 @@
 
-# Scientific Project: Understanding Climate Change
+# Project: Hypoxia Transcription Sites
 
 ## Table of Contents
 1. [Introduction](#introduction)
@@ -13,7 +13,7 @@
 9. [References](#references)
 
 ## Introduction
-Climate change is a pressing global issue with far-reaching consequences. Understanding the dynamics of climate change and its impact on various ecosystems is crucial for developing effective mitigation and adaptation strategies.
+Mycobacterium tuberculosis (MTB) can persist in a latent state in humans for many years before causing disease. Latency has been found to be linked to hypoxia (lack  of oxygen) in the host. We suspect that genes that are activated in  hypoxia are regulated by a common transcription factor. We have access to the upstream sequences of MTB genes upregulated in hypoxia, and our objective is to identify the 20-bp motif representing the binding site for the transcription factor that regulates these genes.
 
 ## Aim of the Project
 The aim of this project is to investigate the effects of climate change on biodiversity in a specific region. We will analyze historical climate data and biodiversity indicators to assess trends and identify potential correlations.
@@ -26,7 +26,7 @@ Climate change poses a significant threat to biodiversity, leading to shifts in 
 
 ## Methodology
 1. Data collection: Gather historical climate data from reliable sources such as meteorological stations and satellite observations. Obtain biodiversity data from field surveys, research databases, and species distribution models.
-2. Analysis: Use statistical methods and spatial analysis techniques to explore temporal trends in climate variables and biodiversity indicators. Identify patterns, correlations, and potential drivers of change.
+2. Analysis: 
 3. Modeling: Develop predictive models to project future climate scenarios and their impact on biodiversity. Assess the vulnerability of species and ecosystems to climate change.
 4. Interpretation: Interpret the findings in the context of existing scientific literature and theoretical frameworks. Discuss implications for conservation policy and management strategies.
 
@@ -35,15 +35,13 @@ Climate change poses a significant threat to biodiversity, leading to shifts in 
 - Biodiversity data: Species richness, abundance, distribution maps, habitat characteristics.
 
 ## Analysis
-- Time-series analysis: Trend detection, seasonal patterns, and anomalies.
-- Spatial analysis: Mapping species distribution, habitat suitability modeling.
-- Statistical tests: Correlation analysis, regression modeling.
+1. Motif Locations: Gather historical climate data from reliable sources such as meteorological stations and satellite observations. Obtain biodiversity data from field surveys, research databases, and species distribution models.
 
 ## Conclusion
 This project aims to contribute to our understanding of the complex interactions between climate change and biodiversity. By analyzing historical data and projecting future scenarios, we hope to inform evidence-based decision-making and promote conservation efforts in the face of environmental change.
 
 ## References
-- Smith, J. et al. (2020). *Climate Change and Biodiversity Loss: A Global Perspective*. Cambridge University Press.
+- https://www.coursera.org/learn/dna-analysis/peer/NLcAJ/bioinformatics-application-challenge
 - IPCC. (2019). *Special Report on Climate Change and Land*. Intergovernmental Panel on Climate Change.
 
 ## Images
