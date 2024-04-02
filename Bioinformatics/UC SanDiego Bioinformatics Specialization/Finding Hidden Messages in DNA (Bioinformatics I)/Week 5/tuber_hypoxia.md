@@ -8,10 +8,9 @@
 3. [Scope](#scope)
 4. [Problem Statement](#problem-statement)
 5. [Methodology](#methodology)
-6. [Data Collection](#data-collection)
-7. [Analysis](#analysis)
-8. [Conclusion](#conclusion)
-9. [References](#references)
+6. [Analysis](#analysis)
+7. [Conclusion](#conclusion)
+8. [References](#references)
 
 ## Introduction
 **Mycobacterium tuberculosis (MTB)** can persist in a latent state in humans for many years before causing disease. Latency has been found to be linked to hypoxia (lack  of oxygen) in the host. We suspect that genes that are activated in  hypoxia are regulated by a common transcription factor. We have access to the upstream sequences of MTB genes upregulated in hypoxia, and our objective is to identify the motif representing the binding site for the transcription factor that regulates these genes.
@@ -26,14 +25,8 @@ This project will focus on a selected geographical area known for its rich biodi
 Climate change poses a significant threat to biodiversity, leading to shifts in ecosystems, loss of habitat, and decline in species populations. By studying the relationship between climate variables and biodiversity indicators, we aim to gain insights into the drivers of ecological change and inform conservation efforts.
 
 ## Methodology
-1. Data collection: Gather historical climate data from reliable sources such as meteorological stations and satellite observations. Obtain biodiversity data from field surveys, research databases, and species distribution models.
-2. Analysis: 
-3. Modeling: Develop predictive models to project future climate scenarios and their impact on biodiversity. Assess the vulnerability of species and ecosystems to climate change.
-4. Interpretation: Interpret the findings in the context of existing scientific literature and theoretical frameworks. Discuss implications for conservation policy and management strategies.
-
-## Data Collection
-- Climate data: Monthly temperature, precipitation, humidity, and other climatic variables.
-- Biodiversity data: Species richness, abundance, distribution maps, habitat characteristics.
+1. Data collection: The upstream region files were obtained in FASTA format from the course resources.
+2. Analysis: The analysis was conducted using the web-based tool MEME, accessible at  https://meme-suite.org/meme/info/status?service=MEME&id=appMEME_5.5.517120028513061697383868
 
 ## Analysis
 ### Upstream 250 bp regions: 
@@ -94,13 +87,13 @@ The length of the sequence under investigation influences the potential location
 
 The logos derived from various upstream regions are displayed below. It's evident that there is noticeable variation among the strings.
 
-**TMCGCCCMHKCVANGRRGAY**
+**TMCGCCCMHKCVANGRRGAY**: from 25 bp upstream region
 ![TMCGCCCMHKCVANGRRGAY](TMCGCCCMHKCVANGRRGAY_25.png "Consensus motif from upstream25 with motif of length 20") 
 
-**CVRYTRGGGACYDWMGBCCC**
+**CVRYTRGGGACYDWMGBCCC**: from 100 bp upstream region
 ![AGGGSCGWARGTCCYCAABB](CVRYTRGGGACYDWMGBCCC_100.png "Consensus motif from upstream100 with motif of length 20") 
 
-**GBTRGGGMCNRAMGTCCCCN**
+**GBTRGGGMCNRAMGTCCCCN**: from 1000 bp upstream region
 ![GBTRGGGMCNRAMGTCCCCN](GBTRGGGMCNRAMGTCCCCN_1000.png "Consensus motif from upstream1000 with motif of length 20") 
 
 
