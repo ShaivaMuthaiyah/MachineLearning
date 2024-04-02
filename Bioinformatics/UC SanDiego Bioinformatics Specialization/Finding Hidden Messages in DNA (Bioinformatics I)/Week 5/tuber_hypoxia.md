@@ -14,7 +14,7 @@
 9. [References](#references)
 
 ## Introduction
-Mycobacterium tuberculosis (MTB) can persist in a latent state in humans for many years before causing disease. Latency has been found to be linked to hypoxia (lack  of oxygen) in the host. We suspect that genes that are activated in  hypoxia are regulated by a common transcription factor. We have access to the upstream sequences of MTB genes upregulated in hypoxia, and our objective is to identify the 20-bp motif representing the binding site for the transcription factor that regulates these genes.
+**Mycobacterium tuberculosis (MTB)** can persist in a latent state in humans for many years before causing disease. Latency has been found to be linked to hypoxia (lack  of oxygen) in the host. We suspect that genes that are activated in  hypoxia are regulated by a common transcription factor. We have access to the upstream sequences of MTB genes upregulated in hypoxia, and our objective is to identify the motif representing the binding site for the transcription factor that regulates these genes.
 
 ## Aim of the Project
 The aim of this project is to investigate the effects of climate change on biodiversity in a specific region. We will analyze historical climate data and biodiversity indicators to assess trends and identify potential correlations.
@@ -36,8 +36,8 @@ Climate change poses a significant threat to biodiversity, leading to shifts in 
 - Biodiversity data: Species richness, abundance, distribution maps, habitat characteristics.
 
 ## Analysis
-### Motif Locations: 
-The dataset "upstream250.txt" underwent analysis with a minimum and maximum motif length set at 20, facilitating the visualization of motif occurrences within each sequence contained in the file. The graphical representation below illustrates the consensus motif derived from the analysis.
+### Upstream 250 bp regions: 
+The dataset "upstream250.txt" underwent analysis with a minimum and maximum motif length set at 20, facilitating the visualization of motif occurrences within each sequence contained in the file. The graphical representation below illustrates the motif derived from the analysis.
 
 ![AGGGSCGWARGTCCYCAABB](AGGGSCGWARGTCCYCAABB.png "Consensus motif from upstream250 with motif of length 20")
 
@@ -45,8 +45,11 @@ Motif occurrences were observed at multiple positions along the DNA sequences, w
 
 ![meme-motif-locations250](meme-motif-locations250.svg "Motif locations in upstream250")
 
+The same dataset was analysses again with a min motif length of 6 and max 20 to understand if the size of the motif is important to understand the location of binding sites.
+
+
 ## Conclusion
-This project aims to contribute to our understanding of the complex interactions between climate change and biodiversity. By analyzing historical data and projecting future scenarios, we hope to inform evidence-based decision-making and promote conservation efforts in the face of environmental change.
+There are several conclusions we can come to based on the study.
 
 ## References
 - https://www.coursera.org/learn/dna-analysis/peer/NLcAJ/bioinformatics-application-challenge
