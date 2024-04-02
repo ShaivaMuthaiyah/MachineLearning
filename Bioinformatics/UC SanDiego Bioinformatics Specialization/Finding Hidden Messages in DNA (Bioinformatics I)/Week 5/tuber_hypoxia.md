@@ -36,14 +36,15 @@ Climate change poses a significant threat to biodiversity, leading to shifts in 
 - Biodiversity data: Species richness, abundance, distribution maps, habitat characteristics.
 
 ## Analysis
-1. Motif Locations: Gather historical climate data from reliable sources such as meteorological stations and satellite observations. Obtain biodiversity data from field surveys, research databases, and species distribution models.
+1. Motif Locations: On analysis of upsteam250.txt using MEME with a motif width of 20 we receive the following results
 
 ## Conclusion
 This project aims to contribute to our understanding of the complex interactions between climate change and biodiversity. By analyzing historical data and projecting future scenarios, we hope to inform evidence-based decision-making and promote conservation efforts in the face of environmental change.
 
 ## References
 - https://www.coursera.org/learn/dna-analysis/peer/NLcAJ/bioinformatics-application-challenge
-- IPCC. (2019). *Special Report on Climate Change and Land*. Intergovernmental Panel on Climate Change.
+- 8436_lores.jpg from https://www.cdc.gov/vaccines/vpd/tb/public/photos.html
+- Timothy L. Bailey and Charles Elkan, "Fitting a mixture model by expectation maximization to discover motifs in biopolymers", Proceedings of the Second International Conference on Intelligent Systems for Molecular Biology, pp. 28-36, AAAI Press, Menlo Park, California, 1994. [full text]
 
 ## Images
 Insert images related to the project here:
