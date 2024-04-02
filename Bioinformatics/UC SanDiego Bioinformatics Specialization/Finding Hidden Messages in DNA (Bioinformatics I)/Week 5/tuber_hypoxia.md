@@ -91,6 +91,15 @@ To elucidate the disparities between these strings, we can consult the table:
 **GBTRGGGMCNRAMGTCCCCN**
 ![GBTRGGGMCNRAMGTCCCCN](GBTRGGGMCNRAMGTCCCCN_1000.png "Consensus motif from upstream1000 with motif of length 20") 
 
+
+| Consensus String | Upstream Width | Sites Found |
+|------------------|----------------|-------------|
+| TMCGCCCMHKCVANGRRGAY          | 25             | 9/36        |
+| CVRYTRGGGACYDWMGBCCC           | 100            | 15/36       |
+| AGGGSCGWARGTCCYCAABB          | 250            | 22/36       |
+| GBTRGGGMCNRAMGTCCCCN        | 1000           | 27/26       |
+
+
 ## Conclusion
 There are several conclusions we can come to based on the study.
 
