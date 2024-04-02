@@ -81,6 +81,18 @@ To elucidate the disparities between these strings, we can consult the table:
 ![HAGGGVCRDAAGTCCYYARY](HAGGGVCRDAAGTCCYYARY.png "Consensus motif from upstream250 with motif of length 6/20")
 
 ### Comparing motif logos from different upstream sections of the sequence
+The length of the sequence under investigation influences the potential locations where the motif may be present. A longer sequence offers more opportunities to identify the binding sites of the motif. However, this impacts the consensus string, as it is influenced by the number of sites analyzed. Since the distribution of binding sites is not uniform across all DNA sequences, the consensus string will vary based on the number of motifs used to construct it.
+
+
+| Consensus String | Upstream Width | Sites Found |
+|------------------|----------------|-------------|
+| TMCGCCCMHKCVANGRRGAY          | 25 bp             | 9/36        |
+| CVRYTRGGGACYDWMGBCCC           | 100 bp             | 15/36       |
+| AGGGSCGWARGTCCYCAABB          | 250 bp            | 22/36       |
+| GBTRGGGMCNRAMGTCCCCN        | 1000 bp           | 27/26       |
+
+
+The logos derived from various upstream regions are displayed below. It's evident that there is noticeable variation among the strings.
 
 **TMCGCCCMHKCVANGRRGAY**
 ![TMCGCCCMHKCVANGRRGAY](TMCGCCCMHKCVANGRRGAY_25.png "Consensus motif from upstream25 with motif of length 20") 
@@ -90,14 +102,6 @@ To elucidate the disparities between these strings, we can consult the table:
 
 **GBTRGGGMCNRAMGTCCCCN**
 ![GBTRGGGMCNRAMGTCCCCN](GBTRGGGMCNRAMGTCCCCN_1000.png "Consensus motif from upstream1000 with motif of length 20") 
-
-
-| Consensus String | Upstream Width | Sites Found |
-|------------------|----------------|-------------|
-| TMCGCCCMHKCVANGRRGAY          | 25             | 9/36        |
-| CVRYTRGGGACYDWMGBCCC           | 100            | 15/36       |
-| AGGGSCGWARGTCCYCAABB          | 250            | 22/36       |
-| GBTRGGGMCNRAMGTCCCCN        | 1000           | 27/26       |
 
 
 ## Conclusion
