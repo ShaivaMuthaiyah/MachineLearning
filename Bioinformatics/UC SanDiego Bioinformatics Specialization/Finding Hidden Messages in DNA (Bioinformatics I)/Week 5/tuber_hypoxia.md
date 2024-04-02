@@ -88,8 +88,8 @@ To elucidate the disparities between these strings, we can consult the table:
 **CVRYTRGGGACYDWMGBCCC**
 ![AGGGSCGWARGTCCYCAABB](CVRYTRGGGACYDWMGBCCC_100.png "Consensus motif from upstream100 with motif of length 20") 
 
-**CVRYTRGGGACYDWMGBCCC**
-![AGGGSCGWARGTCCYCAABB](CVRYTRGGGACYDWMGBCCC_100.png "Consensus motif from upstream100 with motif of length 20") 
+**GBTRGGGMCNRAMGTCCCCN**
+![GBTRGGGMCNRAMGTCCCCN](GBTRGGGMCNRAMGTCCCCN_1000.png "Consensus motif from upstream1000 with motif of length 20") 
 
 ## Conclusion
 There are several conclusions we can come to based on the study.
