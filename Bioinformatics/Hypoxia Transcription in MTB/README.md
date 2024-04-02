@@ -1,6 +1,6 @@
 
 # Project: Hypoxia Transcription Sites in MTB
-![Placeholder Image 1](8436_lores.jpg "At a magnification of 13172x, this scanning electron micrograph (SEM) depicted a number of Gram-positive Mycobacterium tuberculosis bacteria.")
+![Placeholder Image 1](files/8436_lores.jpg "At a magnification of 13172x, this scanning electron micrograph (SEM) depicted a number of Gram-positive Mycobacterium tuberculosis bacteria.")
 
 ## Table of Contents
 1. [Introduction](#introduction)
