@@ -37,7 +37,7 @@ Climate change poses a significant threat to biodiversity, leading to shifts in 
 
 ## Analysis
 ### Upstream 250 bp regions: 
-The dataset "upstream250.txt" underwent analysis with a minimum and maximum motif length set at 20, facilitating the visualization of motif occurrences within each sequence contained in the file. The graphical representation below illustrates the motif derived from the analysis.
+The dataset "upstream250.txt" underwent analysis with a minimum and maximum motif length set at 20, facilitating the visualization of motif occurrences within each sequence contained in the file. The graphical representation below illustrates the motif derived from the analysis. A consensus sequence comprises a string of nucleotide or protein characters, augmented by "degenerate characters" that indicate a subset of potential characters. These degenerate characters function as "wild cards," with 'N', for instance, representing any character in the sequence.
 
 ![AGGGSCGWARGTCCYCAABB](AGGGSCGWARGTCCYCAABB.png "Consensus motif from upstream250 with motif of length 20")
 
@@ -55,9 +55,29 @@ Motif occurrences were observed to be consistently located downstream, as antici
 ![meme-motif-locations250620](meme-motif-locations250620.svg "Motif locations in upstream250")
 
 ### Comparing motif logs from the same datasets with different critera
-An analysis was conducted on the 250 bp upstream regions of a sequence, generating two motif logos. One logo was generated with a fixed motif size of 20, while for the other logo, the motif size was allowed to vary within a range of 6 to 20, inclusive. Surprisingly, both analyses yielded motifs of size 20. Upon juxtaposing the logos, we observed striking similarity, with nearly identical consensus motifs.
+An analysis was conducted on the 250 bp upstream regions of a sequence, generating two motif logos. One logo was generated with a fixed motif size of 20, while for the other logo, the motif size was allowed to vary within a range of 6 to 20, inclusive. Surprisingly, both analyses yielded motifs of size 20. Upon juxtaposing the logos a striking similarity was observed.
 
+To elucidate the disparities between these strings, we can consult the table:
+
+| Symbol | Meaning              | Mnemonic                                |
+|--------|----------------------|-----------------------------------------|
+| R      | A, G                 | puRine                                  |
+| Y      | C, T                 | pYrimidine                              |
+| W      | A, T                 | Weak (weaker basepairs, fewer hydrogen bonds) |
+| S      | G, C                 | Strong (stronger basepairs, more hydrogen bonds) |
+| K      | G or T               | Keto (both have a keto group)           |
+| M      | A or C               | aMine (both have an amine group)        |
+| B      | C, G, T              | not A (B comes after A)                 |
+| D      | A, G, T              | not C (D comes after C)                 |
+| H      | A, C, T              | not G (H comes after G)                 |
+| V      | A, C, G              | not T or U (V comes after T and U)      |
+| N      | A, C, G, T           | aNy base                                |
+
+
+**AGGGSCGWARGTCCYCAABB**
 ![AGGGSCGWARGTCCYCAABB](AGGGSCGWARGTCCYCAABB.png "Consensus motif from upstream250 with motif of length 20") 
+
+**HAGGGVCRDAAGTCCYYARY**
 ![HAGGGVCRDAAGTCCYYARY](HAGGGVCRDAAGTCCYYARY.png "Consensus motif from upstream250 with motif of length 6/20")
 
 ## Conclusion
