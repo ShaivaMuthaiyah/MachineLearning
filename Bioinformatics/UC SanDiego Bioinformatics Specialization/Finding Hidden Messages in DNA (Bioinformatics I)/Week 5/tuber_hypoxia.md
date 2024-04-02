@@ -45,8 +45,20 @@ Motif occurrences were observed at multiple positions along the DNA sequences, w
 
 ![meme-motif-locations250](meme-motif-locations250.svg "Motif locations in upstream250")
 
-The same dataset was analysses again with a min motif length of 6 and max 20 to understand if the size of the motif is important to understand the location of binding sites.
 
+The dataset was reanalyzed with a minimum motif length of 6 and a maximum of 20 to investigate the influence of motif size on the identification of binding site locations. 
+
+![HAGGGVCRDAAGTCCYYARY](HAGGGVCRDAAGTCCYYARY.png "Consensus motif from upstream250 with motif of length 6/20")
+
+Motif occurrences were observed to be consistently located downstream, as anticipated, with sequences predominantly found towards the right of the sequence. Notably, the motif size appeared to have minimal impact on this observed pattern.
+
+![meme-motif-locations250620](meme-motif-locations250620.svg "Motif locations in upstream250")
+
+### Comparing motif logs from the same datasets with different critera
+An analysis was conducted on the 250 bp upstream regions of a sequence, generating two motif logos. One logo was generated with a fixed motif size of 20, while for the other logo, the motif size was allowed to vary within a range of 6 to 20, inclusive. Surprisingly, both analyses yielded motifs of size 20. Upon juxtaposing the logos, we observed striking similarity, with nearly identical consensus motifs.
+
+![AGGGSCGWARGTCCYCAABB](AGGGSCGWARGTCCYCAABB.png "Consensus motif from upstream250 with motif of length 20") 
+![HAGGGVCRDAAGTCCYYARY](HAGGGVCRDAAGTCCYYARY.png "Consensus motif from upstream250 with motif of length 6/20")
 
 ## Conclusion
 There are several conclusions we can come to based on the study.
